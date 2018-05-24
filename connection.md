@@ -9,8 +9,10 @@
 
 # list of database
 \list
-```
 
+# change to a different database
+\c database_name
+```
 
 # Connected to Database
 
