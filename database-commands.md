@@ -1,7 +1,8 @@
 # Database Commands
 
 ```bash
-# initialize postgresdb
+# initialize the physical space on your hard-disk to allocate
+# databases Therefore, create the default postgres database
 initdb /usr/local/var/postgres
 
 # pg server start
