@@ -1,4 +1,6 @@
-# Utility
+# psql shell
+
+## Utility
 
 ```bash
 # Exit the postgres prompt
@@ -7,14 +9,30 @@
 # help menu
 \?
 
-# list of database
+# List all of your actual databases.
 \list
 
-# change to a different database
+# Connect to another database.
 \c database_name
+
+# List the relations of your currently connected database.
+\d
+
+# Shows information for a specific table.
+\d table_name
 ```
 
-# Connected to Database
+## System
+
+```bash
+# create the superuser with its credentials
+CREATE USER postgres WITH SUPERUSER PASSWORD 'postgres';
+
+# create a new role
+CREATE ROLE postgres;
+```
+
+## Connected to Database
 
 ```bash
 # connect to database name postgres
